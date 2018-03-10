@@ -20,19 +20,12 @@ from keras.layers import Dense
 from keras.layers import LSTM
 
 
-# load data - three different datasets: temperature_prediction, temperature_prediction1
-# temperature_prediction2
-# dataset = read_csv('temperature_prediction2.csv', parse_dates = True, index_col='Time')
-dataset = read_csv('temperature_prediction2.csv', parse_dates = True)
+# load data
+dataset = read_csv('temperature_prediction.csv', parse_dates = True, index_col='Time')
 dataset.drop('Occupancy', axis=1, inplace=True)
 # manually specify column names
-# temperature_prediction
-# dataset.columns = ['Airflow', 'Discharge_air_temperature', 'CO2', 'Zone_temp']
-# temperature_prediction1
-# dataset.columns = ['Zone_temp', 'CO2', 'Discharge_air_temperature', 'Airflow']
-# temperature_prediction2 without 'Time' column
 dataset.columns = ['Airflow', 'Discharge_air_temperature', 'CO2', 'Zone_temp']
-# dataset.index.name = 'Time'
+dataset.index.name = 'Time'
 # mark all NA values with 0
 dataset['Zone_temp'].fillna(0, inplace=True)
 # dataset = DataFrame(dataset)
