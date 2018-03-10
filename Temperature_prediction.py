@@ -2,7 +2,7 @@
 """
 Created on Sat Feb 24 12:11:37 2018
 
-@author: Tony Jiang
+@author: Zhanhong Jiang
 """
 import numpy as np
 from numpy import concatenate
