@@ -4,7 +4,6 @@ Created on Sat Feb 24 12:11:37 2018
 
 @author: Zhanhong Jiang
 """
-import numpy as np
 from numpy import concatenate
 from math import sqrt
 from pandas import read_csv
