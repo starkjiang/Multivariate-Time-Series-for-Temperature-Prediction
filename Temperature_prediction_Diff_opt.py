@@ -3,6 +3,8 @@
 Created on Sat Feb 24 12:11:37 2018
 
 @author: Tony Jiang
+
+Thanks to Jason Brownlee
 """
 import numpy as np
 from numpy import concatenate

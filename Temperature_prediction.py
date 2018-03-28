@@ -3,6 +3,8 @@
 Created on Sat Feb 24 12:11:37 2018
 
 @author: Zhanhong Jiang
+
+Thanks to Jason Brownlee
 """
 from numpy import concatenate
 from math import sqrt
